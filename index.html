@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/acbcbf5aed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <img src="moon.png" id="icon">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="box">
+              <div class="header-text">
+                  <h1>Hi,I am<br><span>M</span>oumita <span>N</span>andi</h1>
+             </div>
+             <div class="image">
+                <img src="my-photo.jpg">
+             </div>
+        </div>     
+    </div>
+
+<!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello,I am Moumita Nandi from Bilaspur,Chhattisgarh.<br>Currently pursuing CSE(B.TECH) from NIT RAIPUR.<br>I am a good-listener,hard working and determined person.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('education')">Education</p>
+                        <p class="tab-links" onClick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onClick="opentab('interests')">Interests</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>B.TECH</span><br>National Institute Of Technology,Raipur(8.78/10)</li>
+                            <li><span>Class 12</span><br>DAV Public School,Chhattisgarh(94.6%)</li>
+                            <li><span>Class 10</span><br>DELHI Public School,Chhattisgarh(10 CGPA)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Solved 450+ Data Structure Questions</span></li>
+                            <li><span>3 stars at Codechef</span></li>
+                            <li><span>5 stars at Hackerrank</span></li>
+                            <li><span>IMO & RMO Qualified</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>Listening To Music</span></li>
+                            <li><span>Web Development</span></li>
+                            <li><span>Travelling</span></li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <img src="c++.png">
+                </div>
+                <div>
+                    <img src="html.jpg">
+                </div>
+                <div>
+                    <img src="css.png">
+                </div>
+                <div>
+                    <img src="dsa.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="clock.jpg">
+                    <div class="layer">
+                        <h3>Analog Clock</h3>
+                        <p>A Digital Clock created using Html,Css and Javascript which shows the real time.</p>
+                        <a href="https://moumita-001.github.io/Analog-Clock/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="list.jpg">
+                    <div class="layer">
+                        <h3>To-Do-List</h3>
+                        <p>A To-Do-List to create,delete,save,edit our daily task.</p>
+                        <a href="https://moumita-001.github.io/To-Do-List/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ttt.jpg">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>A fun Tic-Tac-Toe game to play with our friends with music.</p>
+                        <a href="https://moumita-001.github.io/Tic-Tac-Toe/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="snake.jpg">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>A game with musical sound where a snake eats food.</p>
+                        <a href="https://moumita-001.github.io/snake-game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>moumitanandi100@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7389340794</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Moumita-001"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/moumita-nandi-7a25b4221/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @Moumita.Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";  
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";  
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw9X54GMkDLbBOz9VZhYLaTmxMBwxf0lRj_RqYPDywFUKqt47fgzItACjYiR_G8Cg0s/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+        var icon=document.getElementById("icon");
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme"))
+            {
+                icon.src="sun.png";
+            }
+            else
+            {
+                icon.src="moon.png";
+            }
+        }
+      </script>
+</body>
+</html>
